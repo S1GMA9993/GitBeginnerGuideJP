@@ -1,0 +1,49 @@
+# -----------------------------------------------------------------------------
+# General for Linux & Text Files
+# -----------------------------------------------------------------------------
+# Backup files commonly created by some Linux editors (though VSCode doesn't typically create these)
+*~
+*.bak
+*.swp
+*.swo
+.*.sw[a-p] # Vim swap files, if you use vim alongside VSCode sometimes
+
+# -----------------------------------------------------------------------------
+# Visual Studio Code (VSCode)
+# -----------------------------------------------------------------------------
+# Ignore user-specific workspace storage and state
+.vscode/*
+
+# But DO track project-specific settings that your team might want to share
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+# !.vscode/PSScriptAnalyzerSettings.psd1 # Example for PowerShell, if used
+
+# Ignore workspace files that are specific to a user's machine setup.
+# If your team shares .code-workspace files, you might want to remove the line below.
+*.code-workspace
+
+# Local user history (especially for local edits not meant for the repo)
+.history/
+
+# Cached data
+.cache/
+
+# Output from VSCode tasks or extensions (example, adjust as needed)
+out/
+dist/
+*.vsix # Manually downloaded or packaged extensions
+
+# -----------------------------------------------------------------------------
+# Markdown & Text Creation Specific
+# (Uncomment or add if you use tools that generate these)
+# -----------------------------------------------------------------------------
+
+# If you use Markdown linters/formatters that generate cache or logs
+# .markdownlintcache
+# .prettiercache
+
+# If you build your Markdown into other formats (HTML, PDF, etc.)
+# and don't want to commit the built files
